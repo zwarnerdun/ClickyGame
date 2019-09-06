@@ -1,4 +1,4 @@
-.navbar{
+.nav{
     background-color: #db975f;
     min-height: 70px;
     position: fixed;
@@ -9,8 +9,16 @@
     font-size: calc(10px + 14 * (100vw - 320px)/ 800);
     z-index: 99;
     white-space: nowrap;
+    font-family: 'Rock Salt', cursive;
 }
 
-.instruction{
+nav li {
+    box-sizing: border-box;
+    display: inline-block;
     text-align: center;
-};
+}
+
+a:hover {
+    color:teal;
+    text-decoration: none;
+  }
