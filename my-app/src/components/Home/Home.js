@@ -6,7 +6,7 @@ function Home (props){
         <nav>
             <ul>
                 <li className="brand animated lightSpeedIn">
-                    <a href="/">{props.title}</a>
+                    <a href="/ClickyGame">{props.title}</a>
                 </li>
 
                 <li id="ci">{props.correctincorrect}</li>
