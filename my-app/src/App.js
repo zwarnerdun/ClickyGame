@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Home from "./components/Home"
-import Title from "./components/Title/Title";
-import FriendCard from "./components/Friends/Friendscard";
-import rockofriends from "./rockosfriends.json";
+import Title from "./components/Title";
+import FriendCard from "./components/Friends";
+import rockofriends from "./rockofriends.json";
 import Container from "./Container";
 import Row from "./Row";
+import Wrapper from "./components/Wrapper"
 import Column from "./Column";
 import "./App.css"
 
@@ -18,7 +19,7 @@ function shuffleFriends(array) {
 class App extends Component {
   // Set this.state
   state = {
-    friends,
+    rockofriends,
     currentScore: 0,
     topscore: 0,
     rightwrong: "",
@@ -63,8 +64,8 @@ class App extends Component {
   };
   
   render() {
-    return (
-      <div>
+    return(
+      <Wrapper>
         <Home
           title="Rocko's Modern Life"
           score={this.state.score}
@@ -78,7 +79,7 @@ class App extends Component {
 
         <Container>
           <Row>
-            {this.state.friends.map(friend => (
+            {this.state.rockofriends.map(rockofriends => (
               <Column size="md-3 sm-6">
                 <FriendCard
                   key={rockofriends.id}
@@ -93,7 +94,7 @@ class App extends Component {
             ))}
           </Row>
         </Container>
-      </div>
+      </Wrapper>
     );
   }
 }

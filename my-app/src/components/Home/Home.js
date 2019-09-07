@@ -1,21 +1,23 @@
 import React from "react";
 import "./Home.css";
 
-const Home = () => (
-    <nav>
-        <ul>
-            <li className="brand animated lightSpeedIn">
-                <a href="/">{this.props.title}</a>
-            </li>
+function Home (props){
+    return(
+        <nav>
+            <ul>
+                <li className="brand animated lightSpeedIn">
+                    <a href="/">{props.title}</a>
+                </li>
 
-            <li id="ci">{this.props.correctincorrect}</li>
+                <li id="ci">{props.correctincorrect}</li>
 
-            <li id="score">Score: {this.props.score}</li>
+                <li id="score">Score: {props.score}</li>
 
-            <li id="top">Top Score: {this.props.topScore}</li>
-        </ul>
-    </nav>
-)
+                <li id="top">Top Score: {props.topScore}</li>
+            </ul>
+        </nav>
+    )
+}
 
 export default Home;
 
