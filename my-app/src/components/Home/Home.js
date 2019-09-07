@@ -8,7 +8,7 @@ const Home = () => (
                 <a href="/">{this.props.title}</a>
             </li>
 
-            <li id="rw">{this.props.correctincorrect}</li>
+            <li id="ci">{this.props.correctincorrect}</li>
 
             <li id="score">Score: {this.props.score}</li>
 
