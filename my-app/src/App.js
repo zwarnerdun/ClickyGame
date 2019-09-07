@@ -20,9 +20,9 @@ class App extends Component {
   // Set this.state
   state = {
     rockofriends,
-    currentScore: 0,
+    score: 0,
     topscore: 0,
-    rightwrong: "",
+    correctincorrect: "",
     clicked: []
   };
 
@@ -42,7 +42,7 @@ class App extends Component {
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
-    } else if (newScore === 12) {
+    } else if (newScore === 10) {
       this.setState({ correctincorrect: "That was a hoot!" });
     }
 
@@ -72,11 +72,9 @@ class App extends Component {
           topscore={this.state.topScore}
           correctincorrect={this.state.correctincorrect}
         />
-
         <Title>
          Do not click on a duplicate, or you'll have a fit!
         </Title>
-
         <Container>
           <Row>
             {this.state.rockofriends.map(rockofriends => (

@@ -1,3 +1,11 @@
 .wrapper{
-    background: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0444/2239/rrrrocko-01_shop_preview.jpg')
+    background: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0444/2239/rrrrocko-01_shop_preview.jpg');
+    height: 100%;
+    display: relative;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    padding-bottom: 150px;
 }
+
