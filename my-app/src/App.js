@@ -21,7 +21,7 @@ class App extends Component {
   state = {
     rockofriends,
     score: 0,
-    topscore: 0,
+    topScore: 0,
     correctincorrect: "",
     clicked: []
   };

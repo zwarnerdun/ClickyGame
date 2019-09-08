@@ -13,7 +13,7 @@ function Home (props){
 
                 <li id="score">Score: {props.score}</li>
 
-                <li id="top">Top Score: {props.topScore}</li>
+                {/* <li id="top">Top Score: {props.topScore}</li> */}
             </ul>
         </nav>
     )
