@@ -1,0 +1,26 @@
+nav{
+    background-color: #db975f;
+    min-height: 65px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.22);
+    color: black;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    z-index: 99;
+    white-space: nowrap;
+    font-family: 'Rock Salt', cursive;
+    padding-top: 10px
+}
+
+nav li {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    padding-right: 60px
+}
+
+a:hover {
+    color:rgb(169, 96, 184);
+    text-decoration: none;
+}
