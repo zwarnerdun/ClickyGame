@@ -40,7 +40,7 @@ class App extends Component {
       score: newScore,
       correctincorrect: ""
     });
-    if (newScore >= this.state.topScore) {
+    if (newScore > this.state.topScore) {
       this.setState({ topScore: newScore });
     } else if (newScore === 10) {
       this.setState({ correctincorrect: "That was a hoot!" });
@@ -69,7 +69,7 @@ class App extends Component {
         <Home
           title="Rocko's Modern Life"
           score={this.state.score}
-          topscore={this.state.topScore}
+          topScore={this.state.topScore}
           correctincorrect={this.state.correctincorrect}
         />
         <Title>
